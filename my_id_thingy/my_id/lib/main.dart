@@ -28,10 +28,19 @@ class JoshID extends StatelessWidget {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              CircleAvatar(
+                backgroundImage: null,
+                radius: 40,
+                child: Text('lmao'),
+              ),
+              Divider(
+                height: 60,
+                color: Colors.grey[800],
+              ),
               Text(
                 'NAME',
                 style: TextStyle(
-                  color: const Color.fromARGB(161, 255, 255, 255),
+                  color: Color.fromARGB(47, 255, 255, 255),
                   letterSpacing: 2.0,
                 ),
               ),
