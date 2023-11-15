@@ -35,7 +35,7 @@ class JoshID extends StatelessWidget {
               ),
               Divider(
                 height: 60,
-                color: Colors.grey[800],
+                color: Colors.grey[80 0],
               ),
               Text(
                 'NAME',
