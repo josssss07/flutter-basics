@@ -8,9 +8,15 @@ void main() {
   ));
 }
 
-class JoshID extends StatelessWidget {
+class JoshID extends StatefulWidget {
   const JoshID({super.key});
 
+  @override
+  State<JoshID> createState() => _JoshIDState();
+}
+
+class _JoshIDState extends State<JoshID> {
+  int level_count = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +41,7 @@ class JoshID extends StatelessWidget {
               ),
               Divider(
                 height: 60,
-                color: Colors.grey[80 0],
+                color: Colors.grey[800],
               ),
               Text(
                 'NAME',
@@ -60,7 +66,7 @@ class JoshID extends StatelessWidget {
                 height: 30,
               ),
               Text(
-                'Class',
+                'Level',
                 style: TextStyle(
                   color: const Color.fromARGB(161, 255, 255, 255),
                   letterSpacing: 2.0,
@@ -70,7 +76,7 @@ class JoshID extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                'SY Bsc IT',
+                '$level_count',
                 style: TextStyle(
                   letterSpacing: 2.0,
                   fontSize: 27.6,
@@ -97,6 +103,18 @@ class JoshID extends StatelessWidget {
                   )
                 ],
               ),
+              FloatingActionButton(
+                onPressed: () {
+                  setState(() {
+                    level_count += 1;
+                    if (level_count > 69) {
+                      level_count = 0;
+                    }
+                  });
+                },
+                backgroundColor: Colors.lightBlue,
+                child: Icon(Icons.add),
+              )
             ]),
       ),
     );

@@ -16,14 +16,14 @@ class MyXaviersId extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.white,  
           elevation: 0,
           centerTitle: true,
           title: Text('')),
       body: Padding(
         padding: EdgeInsets.all(20),
         child: Column(
-          children: <Widget>[
+          children: <Widget>[ 
             Image.asset(
               'images/xaviers_logo.png',
               height: 100,

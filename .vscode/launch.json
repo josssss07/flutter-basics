@@ -1,0 +1,68 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "my_app_1",
+            "cwd": "my_app_1",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "my_app_1 (profile mode)",
+            "cwd": "my_app_1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "my_app_1 (release mode)",
+            "cwd": "my_app_1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "my_id",
+            "cwd": "my_id_thingy\\my_id",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "my_id (profile mode)",
+            "cwd": "my_id_thingy\\my_id",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "my_id (release mode)",
+            "cwd": "my_id_thingy\\my_id",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "xaviers_id_replica",
+            "cwd": "Xaviers-id-replica\\xaviers_id_replica",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "xaviers_id_replica (profile mode)",
+            "cwd": "Xaviers-id-replica\\xaviers_id_replica",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "xaviers_id_replica (release mode)",
+            "cwd": "Xaviers-id-replica\\xaviers_id_replica",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
