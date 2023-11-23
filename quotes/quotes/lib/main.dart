@@ -1,5 +1,8 @@
+// ignore_for_file: non_constant_identifier_names, avoid_types_as_parameter_names, prefer_const_constructors, use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 import 'quotes.dart';
+import 'quote_card.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -39,14 +42,14 @@ class _QuotesListState extends State<QuotesList> {
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
-          children: myquotes
-              .map((quote) => Text('${quote.text} - ${quote.author}'))
-              .toList(),
+          children:
+              myquotes.map((quote) => QuoteTemplate(quote: quote)).toList(),
         ),
       ),
     );
   }
 }
+
 
 
 
